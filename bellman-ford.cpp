@@ -16,6 +16,7 @@ int main() {
     for(int i = 0; i < m; i++){
         int u, v, w;
         cin >> u >> v >> w;
+        adj_list[u].push_back({v, w});
     }
     int src = 1;
     d[src] = 0;
